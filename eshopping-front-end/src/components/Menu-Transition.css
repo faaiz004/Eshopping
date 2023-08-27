@@ -1,0 +1,29 @@
+/* Initial state */
+.Menu-Transition-enter, 
+.Menu-Transition-appear {
+  opacity: 0;
+  background-color: #ffffff; /* Assuming a white background */
+  position: fixed; /* To position it relative to the viewport */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  overflow: hidden; /* In case there's more content inside */
+  z-index: 100; /* Ensure it overlays other content */
+}
+
+/* Transition state */
+.Menu-Transition-enter-active, 
+.Menu-Transition-appear-active {
+  opacity: 1;
+  transition: transform 300ms ease-out, opacity 300ms ease-out;
+}
+
+/* Exit state */
+.Menu-Transition-exit {
+  opacity: 1;
+}
+
+/* Exit transition state */
+.Menu-Transition-exit-active {
+  opacity: 0;
+  transition: transform 300ms ease-out, opacity 300ms ease-out;
+}

@@ -1,0 +1,29 @@
+.sort-drop-down-enter, .sort-drop-down-appear {
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  
+  .sort-drop-down-enter-active, .sort-drop-down-appear-active {
+    transform: scaleY(1);
+    opacity: 1;
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
+  
+  .sort-drop-down-enter-done, .sort-drop-down-appear-done {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  
+  .sort-drop-down-exit {
+    transform-origin: top;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  
+  .sort-drop-down-exit-active {
+    transform: scaleY(0);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
+  
